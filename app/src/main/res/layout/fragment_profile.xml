@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Profile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@color/kesriLight">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/embtrend_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Profile"
+                    android:textColor="@color/white"
+                    android:textSize="24dp"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout> <!-- Profile-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:id="@+id/id_ivProfile"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/designer1"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/idEdit_profileImg"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/edit_icon"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:tint="@color/kesriLight" />
+
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/idET_Profile_Name"
+                    android:background="@drawable/profile_border"
+                    android:hint="Enter Name"
+                    android:paddingStart="20dp"
+                    android:inputType="textEmailAddress"
+                    android:textSize="20dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp">
+                    <!--
+                    <com.hbb20.CountryCodePicker
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        />
+                        -->
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/idET_Profile_mono"
+                        android:background="@drawable/profile_border"
+                        android:hint="Enter Mobile No"
+                        android:paddingStart="20dp"
+                        android:inputType="phone"
+                        android:textSize="20dp" />
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/idET_Profile_DOB"
+                    android:background="@drawable/profile_border"
+                    android:hint="Enter Date Of Birth"
+                    android:paddingStart="20dp"
+                    android:inputType="date"
+                    android:focusable="false"
+                    android:textSize="20dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/idRB_profile_male"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Male"
+                            android:checked="true"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/idRB_profile_female"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Female"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"/>
+
+                    </RadioGroup>
+                </LinearLayout>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/idET_Profile_Address"
+                    android:background="@drawable/profile_border"
+                    android:hint="Enter Address"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:paddingStart="20dp"
+                    android:textSize="20dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/idET_Profile_City"
+                    android:background="@drawable/profile_border"
+                    android:hint="Enter City"
+                    android:paddingStart="20dp"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="20dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/idET_Profile_State"
+                    android:background="@drawable/profile_border"
+                    android:hint="Enter State"
+                    android:paddingStart="20dp"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="20dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/idET_Profile_email"
+                    android:background="@drawable/profile_border"
+                    android:hint="Enter Your Email"
+                    android:paddingStart="20dp"
+                    android:maxLines="1"
+                    android:inputType="textEmailAddress"
+                    android:textSize="20dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/idBtn_profile_submit"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center"
+                    android:text="Submit"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/profile_btn"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</FrameLayout>
